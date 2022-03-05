@@ -1,9 +1,9 @@
 # js-pixel-fonts
 Pixel fonts in pure JS
 
-NOTE: this is a browser-targeted fork of [@hgcummings'](https://github.com/hgcummings/pixel-fonts) node.js library. It does not include the PNG rendering function.
-
 ![Sample of Seven plus font](https://github.com/barthy-koeln/pixel-fonts/raw/main/samples/sevenPlus.png)
+
+> NOTE: this is a browser-targeted fork of [@hgcummings'](https://github.com/hgcummings/pixel-fonts) node.js library. It does not include the PNG rendering function.
 
 ## Installation
 
