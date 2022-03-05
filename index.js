@@ -57,14 +57,7 @@ const renderLine = (text, font) => {
 }
 
 export function renderPixels (text, font) {
-  const lines = text
+  return text
     .split('\n')
-    .map(line => [
-      ...gap,
-      ...renderLine(line, font)
-    ])
-
-  lines[0].shift()
-
-  return [...lines]
+    .map(line => renderLine(line, font))
 }

@@ -40,4 +40,11 @@ const pixels = renderPixels("Hi!", fonts.sevenPlus);
 
 #### `renderPixels(text, font)`
 
-Renders the supplied `text` string in the specified `font` as an array of arrays of pixels. Each array represents a single row, with each element (`1` or `0`) representing whether the pixel should be active or not.
+Renders the supplied `text` string in the specified `font`.
+
+Structure of the returned array:
+```
+array[]      // text line, one per \n in the input string
+array[][]    // row, one of several per text line
+array[][][]  // column in row, either 1 or 0
+```
