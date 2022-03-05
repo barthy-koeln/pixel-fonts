@@ -1,4 +1,4 @@
-{
+export default {
     "name": "SLUMBERS",
     "lineHeight": 5,
     "description": "SLIM (3X5) MATHEMATICAL SYMBOLS AND CAPITAL LETTERS (NO LOWER CASE)",
