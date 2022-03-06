@@ -1,5 +1,5 @@
 import { renderPixels } from './index.js'
-import sevenPlus from './data/seven-plus.js'
+import sevenPlusExtended from './data/seven-plus.extended.js'
 import slumbers from './data/slumbers.js'
 
 let allCharacters = ''
@@ -11,8 +11,10 @@ for (let charCode = 33; charCode < 127; ++charCode) {
   allCharacters += String.fromCharCode(charCode)
 }
 
+allCharacters += '\n' + 'Ää Öö Üü'
+
 const fonts = [
-  sevenPlus,
+  sevenPlusExtended,
   slumbers
 ]
 
