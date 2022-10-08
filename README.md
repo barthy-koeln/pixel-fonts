@@ -7,7 +7,10 @@ Pixel fonts in pure JS
 
 ## Installation
 
-```npm install js-pixel-fonts --save```
+```shell
+npm install barthy-koeln/pixel-fonts --save
+yarn add barthy-koeln/pixel-fonts
+```
 
 ## Usage
 
@@ -19,7 +22,7 @@ Render as an array of pixels, for using elsewhere (e.g. drawing to canvas, contr
 import { renderPixels } from 'js-pixel-fonts'
 import sevenPlus from 'js-pixel-fonts/data/seven-plus.js'
 
-const pixels = renderPixels("Hi!", fonts.sevenPlus);
+const pixels = renderPixels("Hi!", sevenPlus);
 
 /**
  * pixels === [
@@ -44,7 +47,7 @@ Renders the supplied `text` string in the specified `font`.
 
 Structure of the returned array:
 ```
-array[]      // text line, one per \n in the input string
-array[][]    // row, one of several per text line
-array[][][]  // column in row, either 1 or 0
+array[lineIndex]      // text line, one per \n in the input string
+array[lineIndex][rowindex]    // row, one of several per text line
+array[lineIndex][rowindex][columnIndex]  // column in row, either 1 or 0
 ```
